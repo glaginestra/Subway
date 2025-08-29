@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Subway</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="logo"></div>
+      </div>
+      <hr />
+      <div class="barra">
+        <ul>
+          <li class="barra-menu">Menú</li>
+          <div class="menu">
+            <li><a href="#sandwiches">Sándwiches</a></li>
+            <li><a href="#wraps">Wraps</a></li>
+            <li><a href="#ensaladas">Ensaladas</a></li>
+          </div>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#locales">Locales</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="section-1">
+      <div class="container swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenido-imagen">
+              <div class="contenido uno">
+                <h2>Descubrí las ofertas que tenemos para vos</h2>
+                <p>Promociones y descuentos todos los días!</p>
+                <button class="button-swip">PROMOCIONES</button>
+              </div>
+              <div class="promo-imagen1"></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenido-imagen">
+              <div class="contenido dos">
+                <h2>Descubrí las ofertas que tenemos para vos</h2>
+                <p>Promociones y descuentos todos los días!</p>
+                <button class="button-swip">PROMOCIONES</button>
+              </div>
+              <div class="promo-imagen2"></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenido-imagen">
+              <div class="contenido tres">
+                <h2>Descubrí las ofertas que tenemos para vos</h2>
+                <p>Promociones y descuentos todos los días!</p>
+                <button class="button-swip">PROMOCIONES</button>
+              </div>
+              <div class="promo-imagen3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- SEGUNDO SWIPER -->
+    <section id="section-2">
+      <h2>Nuestro Menú</h2>
+      <div class="container swiper2">
+        <h3 id="sandwiches">Sandwich de Pollo</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen1"></div>
+              <div class="contenido uno">
+                <h3>Sandwich de Pollo Teriyaki</h3>
+                <p>
+                  Jugoso pollo teriyaki acompañado de vegetales frescos y pan
+                  recién horneado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen2"></div>
+              <div class="contenido dos">
+                <h3>Sandwich de Pollo BBQ</h3>
+                <p>
+                  Pollo a la barbacoa, vegetales frescos y salsa especial en pan
+                  suave.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen3"></div>
+              <div class="contenido tres">
+                <h3>Sandwich de Pechuga de Pollo</h3>
+                <p>
+                  Pechuga de pollo grillada, vegetales frescos y pan artesanal.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen4"></div>
+              <div class="contenido cuatro">
+                <h3>Sandwich Melt de Pollo</h3>
+                <p>
+                  Pollo, queso fundido y vegetales frescos en pan crujiente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen7"></div>
+              <div class="contenido dos">
+                <h3>Sandwich Cordon Blue de Pollo</h3>
+                <p>
+                  Pollo empanado, jamón y queso, con vegetales frescos y salsa
+                  especial.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen8"></div>
+              <div class="contenido dos">
+                <h3>Sandwich de Pollo Cream Cheese</h3>
+                <p>
+                  Pollo, queso crema y vegetales frescos en pan suave y
+                  delicioso.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-2"></div>
+        <div class="swiper-button-prev swiper-button-prev-2"></div>
+      </div>
+
+      <div class="container swiper2 carne">
+        <h3>Sandwich de Carne</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen6"></div>
+              <div class="contenido dos">
+                <h3>Sandwich de Costillas</h3>
+                <p>
+                  Costillas de carne tierna, vegetales frescos y pan artesanal
+                  Subway.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen5"></div>
+              <div class="contenido dos">
+                <h3>Sandwich de Carne Criolla</h3>
+                <p>Criolla de carne tierna y vegetales frescos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-2"></div>
+        <div class="swiper-button-prev swiper-button-prev-2"></div>
+      </div>
+
+      <div class="container swiper2">
+        <h3>Otros Sandwiches</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen9"></div>
+              <div class="contenido uno">
+                <h3>Sandwich de Atún</h3>
+                <p>Atún premium, mayonesa y vegetales frescos en pan Subway.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen10"></div>
+              <div class="contenido dos">
+                <h3>Sandwich Italiano</h3>
+                <p>Salame, jamón, queso y vegetales frescos en pan italiano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen11"></div>
+              <div class="contenido tres">
+                <h3>Sandwich Italianísimo</h3>
+                <p>
+                  Mix de fiambres italianos, queso y vegetales frescos en pan
+                  Subway.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen12"></div>
+              <div class="contenido cuatro">
+                <h3>Sandwich de Jamón</h3>
+                <p>
+                  Jamón cocido, queso y vegetales frescos en pan recién
+                  horneado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen13"></div>
+              <div class="contenido uno">
+                <h3>Sandwich de Quinoa</h3>
+                <p>Quinoa, vegetales frescos y salsa especial en pan Subway.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-2"></div>
+        <div class="swiper-button-prev swiper-button-prev-2"></div>
+      </div>
+
+      <div class="container swiper2">
+        <h3 id="wraps">Wraps</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen14"></div>
+              <div class="contenido dos">
+                <h3>Wrap de Pollo Teriyaki</h3>
+                <p>
+                  Pollo teriyaki, vegetales frescos y salsa especial en tortilla
+                  suave.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen15"></div>
+              <div class="contenido tres">
+                <h3>Wrap de Carne y Queso</h3>
+                <p>
+                  Carne, queso fundido y vegetales frescos en tortilla de trigo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen16"></div>
+              <div class="contenido cuatro">
+                <h3>Wrap Veggie</h3>
+                <p>
+                  Vegetales frescos y salsa especial en tortilla suave, opción
+                  vegetariana.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-2"></div>
+        <div class="swiper-button-prev swiper-button-prev-2"></div>
+      </div>
+
+      <div class="container swiper2">
+        <h3 id="ensaladas">Ensaladas</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen17"></div>
+              <div class="contenido uno">
+                <h3>Ensalada Caesar</h3>
+                <p>
+                  Lechuga fresca, pollo grillado, croutons y queso parmesano con
+                  aderezo Caesar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen18"></div>
+              <div class="contenido dos">
+                <h3>Ensalada de Pollo Teriyaki</h3>
+                <p>
+                  Pollo teriyaki, lechuga, tomate y vegetales frescos con
+                  aderezo especial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen19"></div>
+              <div class="contenido tres">
+                <h3>Ensalada de Pollo</h3>
+                <p>
+                  Pollo grillado, lechuga, tomate y vegetales frescos con
+                  aderezo Subway.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="contenedor-menu">
+              <div class="imagen20"></div>
+              <div class="contenido cuatro">
+                <h3>Ensalada Vegetariana</h3>
+                <p>
+                  Mix de vegetales frescos, queso y aderezo especial, opción
+                  vegetariana.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-2"></div>
+        <div class="swiper-button-prev swiper-button-prev-2"></div>
+      </div>
+    </section>
+    <section id="promociones">
+      <h2>Promociones y Ofertas</h2>
+
+      <div class="container-promos">
+        <div class="contenedor-promo">
+          <div id="delivery" class="delivery web">
+            <div class="imagen-prueba"></div>
+            <div class="info">
+              <h3>Disfruta de las mejores promociones desde la web!</h3>
+              <p>Promociones y descuentos todos los días!</p>
+              <div>
+                <button class="web-button uno"></button>
+                <button class="web-button dos"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-promo">
+          <div class="delivery rappi">
+            <div class="imagen"></div>
+            <div class="info">
+              <h3>Aprovecha este descuento desde la app!</h3>
+              <p>Promociones y descuentos todos los días!</p>
+              <div class="sand"></div>
+              <div class="botones">
+                <button class="rappi-button ios"></button>
+                <button class="rappi-button android"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-promo">
+          <div class="delivery pedidosya">
+            <div class="imagen"></div>
+            <div class="info">
+              <h3>Aprovecha los mejores descuentos desde la app!</h3>
+              <p>Promociones y descuentos todos los días!</p>
+              <div class="botones-pedidosya">
+                <button class="pedidosya-button ios"></button>
+                <button class="pedidosya-button android"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="locales">
+      <div class="container-mapa">
+        <div id="mapa"></div>
+        <div>
+          <h2>Encuentra tu Subway mas cercano!</h2>
+        </div>
+      </div>
+    </section>
+    <section id="conocenos">
+      <h3>Conocenos</h3>
+      <div class="contenedor-conocenos">
+        <div class="ulist">
+          <ul>
+            <li>Acerca de Subway®</li>
+            <li>Historia</li>
+            <li>Noticias</li>
+            <li>Contáctanos</li>
+          </ul>
+          <ul>
+            <li>Bienestar</li>
+            <li>Nuestro Planeta</li>
+            <li>Comunidades</li>
+            <li>Sustentabilidad</li>
+            <li>Empleos</li>
+          </ul>
+        </div>
+        <div class="contenedor-bandera">
+          <div class="bandera"></div>
+          <form>
+            <select name="lenguaje" id="">
+              <option>AR Español</option>
+              <option>CL Español</option>
+              <option>PE Español</option>
+              <option>UY Español</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="privacidad">
+        <div class="terminos">
+          <p>Privacidad</p>
+          <hr />
+          <p>Términos de uso</p>
+          <hr />
+          <p>Accesibilidad</p>
+          <hr />
+          <p>Configuración de cookies y anuncios</p>
+          <hr />
+          <p>Centro de privacidad</p>
+          <hr />
+          <p>Preguntas frecuentes</p>
+        </div>
+        <p class="copy">
+          Subway® es una marca registrada a nivel mundial de Subway IP LLC o de
+          cualquiera de sus afiliadas. &copy;2023-2025 Subway.
+        </p>
+      </div>
+      <div class="redes">
+        <button class="facebook"></button>
+        <button class="instagram"></button>
+        <button class="youtube"></button>
+        <button class="tiktok"></button>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- AIzaSyCZfBzS3TqcLVyDTikrxXAx-09CztIB9Sk -->

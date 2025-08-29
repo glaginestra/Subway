@@ -1,0 +1,1028 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Subway-Regular";
+}
+
+h3 {
+  font-family: "Subway-Bold";
+  font-size: 35px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-family: "Subway-Bold";
+  font-size: 46px;
+}
+
+h1 {
+  font-family: "Subway-Bold";
+  font-size: 55px;
+  margin: 0;
+}
+
+#section-1 {
+  background-color: #009743;
+}
+
+#section-2 {
+  margin-top: 40px;
+  height: auto;
+  visibility: visible;
+}
+
+#section-2 h3 {
+  margin-bottom: -13px !important;
+}
+
+button {
+  font-family: "Sans-Button";
+  font-size: 20px;
+  border-radius: 9px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.button-swip {
+  background-color: #ffc600;
+  background-color: #ffffff;
+  background-color: #009743;
+  background-color: #ffcb0a;
+  background-color: #008c15;
+}
+
+.button-swip {
+  width: 50%;
+  height: 50px;
+  background-color: #009743;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.button-swip:hover {
+  background-color: #017134;
+}
+
+.contenido {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  display: flex !important;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section-1 .swiper-slide {
+  background-color: #ffc600;
+  border-radius: 12px;
+}
+
+.contenido-imagen {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.promo-imagen1 {
+  width: 55%;
+  height: 100%;
+  background-image: url(/Imagenes/Subway/subweek.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo-imagen2 {
+  width: 55%;
+  height: 100%;
+  background-image: url(/Imagenes/Subway/promo-21.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo-imagen3 {
+  width: 55%;
+  height: 100%;
+  background-image: url(/Imagenes/Subway/promo-sub-dia.avif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin-bottom: 100px !important;
+}
+
+.carne {
+  margin-top: 300px;
+}
+
+#section-3 {
+  height: 150vh;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.486);
+}
+
+.logo {
+  background-image: url(/Imagenes/Subway/subway-logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  height: 50px;
+  width: 300px;
+}
+
+header hr {
+  width: 0px;
+  height: 20px;
+  margin: 0;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+
+header li {
+  font-family: "Subway-Italic";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 41.41px;
+  left: 305px;
+  background-color: #ffffff;
+  width: 110px;
+  height: 138px;
+  text-align: center;
+  display: none;
+  z-index: 99999;
+  box-shadow: 5px 20px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu :first-child {
+  margin-top: 19px;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.barra-menu:hover + .menu {
+  display: block !important;
+}
+
+.menu:hover {
+  display: block !important;
+}
+
+#promociones {
+  height: 260vh;
+}
+
+#promociones h2 {
+  margin-left: 70px;
+  color: black;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.web .imagen-prueba {
+  background-image: url(/Imagenes/Subway/delivery.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #ffc600;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.rappi .imagen {
+  background-image: url(/Imagenes/Subway/promo-rappi.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #ffc600;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+}
+
+.contenedor-promo:nth-child(2) .rappi .info {
+  background-color: #ff5a47;
+  /* rgba(236, 67, 41, 0.792) */
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  color: white;
+  position: relative;
+}
+
+.contenedor-promo:nth-child(2) .rappi .info h3,
+.contenedor-promo:nth-child(2) .rappi .info p,
+.contenedor-promo:nth-child(2) .rappi .info button {
+  text-align: left;
+  align-self: self-end;
+}
+
+.contenedor-promo:nth-child(2) .rappi .info .rappi-button,
+.contenedor-promo:nth-child(3) .pedidosya .info .pedidosya-button {
+  height: 55px;
+  width: 280px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.botones {
+  margin-left: 210px;
+  display: flex;
+  width: 400px;
+  margin-top: 253px;
+  gap: 20px;
+}
+
+.botones-pedidosya {
+  margin-left: 20px;
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.ios {
+  background-image: url(/Imagenes/Redes/download-apple-store.svg);
+}
+
+.android {
+  background-image: url(/Imagenes/Redes/download-google-play.svg);
+  width: 400px;
+}
+
+.contenedor-promo:nth-child(2) .rappi .info h3 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.sand {
+  background-image: url(/Imagenes/Subway/sandwich-rappi.png);
+  position: absolute;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 325px;
+  width: 300px;
+  height: 180px;
+  top: 212px;
+  left: -27px;
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+}
+
+.pedidosya .imagen {
+  background-image: url(/Imagenes/Subway/subway-pedidosya.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #ffc600;
+  background-size: cover;
+  width: 50%;
+  height: 605px;
+}
+
+.contenedor-promo:nth-child(3) .pedidosya .info {
+  background-color: #ed4251;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  color: white;
+}
+
+.contenedor-promo {
+  display: flex;
+  width: 90%;
+  height: 600px;
+  border: 3px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: center;
+  padding: 0;
+}
+
+.contenedor-promo:nth-child(2) {
+  display: flex;
+  width: 90%;
+  height: 505px;
+  border: 3px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: center;
+  padding: 0;
+}
+
+.container-promos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.web .info {
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  background-color: #0c9349;
+}
+
+.web h3 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.web p {
+  text-align: left;
+  color: #ffffff;
+}
+
+.web-button.uno,
+.web-button.dos {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  height: 50px;
+  width: 200px;
+  border: 1px solid white;
+}
+
+.web-button.uno {
+  background-image: url(/Imagenes/Subway/pide-por-rappi.png);
+}
+
+.web-button.dos {
+  background-image: url(/Imagenes/Subway/pedidosya-logo.jpg);
+  background-size: 180px;
+  width: 180px;
+}
+
+.web .info div {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.pedidosya .info h3,
+.pedidosya .info p {
+  margin-left: 20px;
+}
+
+#locales {
+  height: 105vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-mapa {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgb(255, 255, 255);
+  width: 90%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.697);
+}
+
+#mapa {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.container-mapa h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#conocenos {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.contenedor-conocenos {
+  display: flex;
+  flex-direction: row;
+  gap: 870px;
+}
+
+#conocenos h3 {
+  margin-bottom: -10px;
+}
+
+.ulist {
+  display: flex;
+  flex-direction: row;
+}
+
+.ulist ul {
+  list-style: none;
+  margin-left: -35px;
+}
+
+.ulist li {
+  margin-top: 20px;
+  width: 180px;
+  cursor: pointer;
+}
+
+.ulist li:hover {
+  text-decoration: underline;
+}
+
+.contenedor-bandera {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.bandera {
+  height: 23px;
+  width: 23px;
+  background-image: url(/Imagenes/Subway/bandera-argentina.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 23px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.privacidad {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminos {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminos hr {
+  width: 0;
+  height: 20px;
+}
+
+.terminos p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.terminos p:hover {
+  text-decoration: underline;
+}
+
+.privacidad p {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: -50px;
+  margin-right: 50px;
+}
+
+.redes button {
+  height: 30px;
+  width: 30px;
+  background-position: center center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-color: black;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.redes button:hover {
+  background-color: rgb(38, 37, 37);
+}
+
+.facebook {
+  background-image: url(/Imagenes/Redes/facebook-spotify.png);
+}
+
+.instagram {
+  background-image: url(/Imagenes/Redes/instagram-spotify.png);
+}
+
+.youtube {
+  background-image: url(/Imagenes/Redes/facebook-spotify.png);
+}
+
+.tiktok {
+  background-image: url(/Imagenes/Redes/facebook-spotify.png);
+}
+
+/*SWIPER*/
+
+.swiper {
+  width: 90%;
+  height: 710px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden !important;
+}
+
+#section-2 {
+  height: 400vh;
+}
+
+/* Contenedor del segundo Swiper */
+.swiper2 {
+  width: 90%;
+  height: 800px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden !important;
+  margin-top: 70px;
+  margin-bottom: -270px !important;
+}
+
+/* Posicionar botones del PRIMER Swiper */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  position: absolute;
+  color: black !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.swiper .swiper-button-next {
+  right: 10px;
+}
+.swiper .swiper-button-prev {
+  left: 10px;
+}
+
+/* Posicionar botones del SEGUNDO Swiper */
+.swiper2 .swiper-button-next-2,
+.swiper2 .swiper-button-prev-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100px);
+  z-index: 20;
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  color: black;
+}
+.swiper2 .swiper-button-next-2 {
+  right: 10px;
+}
+.swiper2 .swiper-button-prev-2 {
+  left: 10px;
+}
+
+.swiper2 .swiper-wrapper {
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.swiper2 .swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+#section-2 .imagen1 {
+  background-image: url(/Imagenes/Subway/sandwich-pollo-teriyaki.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen2 {
+  background-image: url(/Imagenes/Subway/sandwich-pollo-bbq.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen3 {
+  background-image: url(/Imagenes/Subway/sandwich-pechuga-pollo.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen4 {
+  background-image: url(/Imagenes/Subway/sandwich-melt-pollo.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen8 {
+  background-image: url(/Imagenes/Subway/sandwich-pollo-cream-cheese.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen7 {
+  background-image: url(/Imagenes/Subway/sandwich-cordronblue-pollo.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen5 {
+  background-image: url(/Imagenes/Subway/sandwich-criollo-carne.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen6 {
+  background-image: url(/Imagenes/Subway/sandwich-costillas-carne.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen9 {
+  background-image: url(/Imagenes/Subway/sandwich-atun.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen10 {
+  background-image: url(/Imagenes/Subway/sandwich-italiano.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen11 {
+  background-image: url(/Imagenes/Subway/sandwich-italianisimo.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen12 {
+  background-image: url(/Imagenes/Subway/sandwich-jamon.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen13 {
+  background-image: url(/Imagenes/Subway/sandwich-quinoa.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen16 {
+  background-image: url(/Imagenes/Subway/wrap-veggie.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen15 {
+  background-image: url(/Imagenes/Subway/wrap-carne-queso.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen14 {
+  background-image: url(/Imagenes/Subway/wrap-pollo-teriyaki.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen17 {
+  background-image: url(/Imagenes/Subway/ensalada-caesar.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen18 {
+  background-image: url(/Imagenes/Subway/ensalada-pollo-teriyaki.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen19 {
+  background-image: url(/Imagenes/Subway/ensalada-pollo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+
+#section-2 .imagen20 {
+  background-image: url(/Imagenes/Subway/ensalada-vegetariana.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+}
+/* 
+.swiper2 .swiper-wrapper{
+    background-color: #ffc600;
+} */
+
+.contenedor-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.contenedor-menu:hover {
+  transform: scale(1.03);
+}
+
+.swiper2 .swiper-slide {
+  height: 550px;
+  /* background-color: aqua; */
+  margin-top: -10px;
+}
+
+.swiper2 .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper2 .contenido {
+  width: 340px;
+  height: 150px;
+}
+
+#section-2 h3 {
+  font-size: 25px;
+}
+
+#section-2 h2 {
+  margin-left: 60px;
+  margin-bottom: -60px;
+}
+
+h2,
+h3,
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#section-2 p {
+  margin-top: 30px;
+}
+
+header li {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+
+/* MAPA */
+#mapa {
+  height: 500px;
+  width: 100%;
+}
+
+.popup-pequenio .leaflet-popup-content {
+  font-size: 10.5px;
+  width: 30px;
+  height: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-opacidad-0 {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease;
+}
+
+@font-face {
+  font-family: "Subway-Bold";
+  src: url("font/SourceSansPro-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Subway-Regular";
+  src: url("font/SourceSansPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Subway-Italic";
+  src: url("font/SourceSansPro-It.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sans-Button";
+  src: url("font/SANSON\ Font\ by\ Situjuh\ \(7NTypes\).otf") format("opentype");
+}
+
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
